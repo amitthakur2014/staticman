@@ -1,0 +1,15 @@
+# Staticman configuration
+comments:
+  allowedFields:
+    - name
+    - email
+    - comment
+  branch: "main" # Replace with your repository's default branch
+  moderation: true
+  requiredFields:
+    - name
+    - email
+    - comment
+  format: "yaml"
+  transforms:
+    email: md5
